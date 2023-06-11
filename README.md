@@ -14,10 +14,10 @@ Tests:
 
 ```bash
 # run lzw tests
-$ python3 -m unittest test/test_lzw.py
+$ python3 -m unittest tests/test_lzw.py
 
 # run huffman tests
-$ python3 -m unittest test/test_huffman.py
+$ python3 -m unittest tests/test_huffman.py
 ```
 
 ## Comparison between the algorithms
