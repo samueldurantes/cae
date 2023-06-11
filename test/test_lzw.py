@@ -1,5 +1,5 @@
 import unittest
-from zaf.lzw import Lzw
+from cae.lzw import Lzw
 
 class TestLzw(unittest.TestCase):
   def test_encode_0(self):

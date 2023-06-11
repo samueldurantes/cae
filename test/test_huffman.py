@@ -1,5 +1,5 @@
 import unittest
-from zaf.huffman import Huffman
+from cae.huffman import Huffman
 
 class TestHuffman(unittest.TestCase):
   def test_encode_0(self):
