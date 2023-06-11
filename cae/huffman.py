@@ -53,10 +53,13 @@ class Huffman:
     tree = self.build_tree(freq)
     codemap = self.build_codemap(tree)
 
-    input_encoded = ''.join(list(map(lambda c: codemap[c], input)))
+    input_encoded = "".join(list(map(lambda c: codemap[c], input)))
     return (codemap, input_encoded)
+
+  def decode(self, input_encoded):
+    return None
 
 if __name__ == "__main__":
   h = Huffman()
-  codemap, input_encoded = h.encode('Hello, World!')
+  codemap, input_encoded = h.encode("Hello, World!")
   print(codemap, input_encoded)

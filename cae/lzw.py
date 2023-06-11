@@ -21,7 +21,7 @@ class Lzw:
         seq = current_char
 
     res.append(dict[seq] if len(seq) > 1 else ord(seq))
-    return ''.join(list(map(lambda n: chr(n), res)))
+    return "".join(list(map(lambda n: chr(n), res)))
 
   def decode(self, input):
     dict = self.create_dec_dict()
@@ -40,7 +40,7 @@ class Lzw:
       dict[code] = seq + out
       code += 1
       seq = entry
-    return ''.join(res)
+    return "".join(res)
 
 if __name__ == "__main__":
   lzw = Lzw()
